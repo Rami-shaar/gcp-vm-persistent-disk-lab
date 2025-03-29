@@ -8,22 +8,9 @@ This project demonstrates how to manually build a secure and production-style Go
 
 GCP Project: `cloud-practice-project`
 
-┌─────────────────────────────┐
-│    GCP Virtual Network      │
-│   (Default VPC used here)   │
-│                             │
-│  ┌───────────────────────┐  │
-│  │   Compute Engine VM   │  │
-│  │  gcp-linux-vm         │  │
-│  │  Region: us-central1  │  │
-│  └───────────────────────┘  │
-│          │                  │
-│          │ Attached Disk    │
-│          ▼                  │
-│   🟢 Persistent Disk        │
-│   Name: gcp-data-disk      │
-│   Size: 10 GB              │
-└─────────────────────────────┘
+You deployed:
+- A Compute Engine VM: `gcp-linux-vm` (Region: us-central1)
+- A 10 GB Persistent Disk: `gcp-data-disk` attached to the VM
 
 ---
 
@@ -82,4 +69,3 @@ UUID=<your-disk-uuid> /mnt/data ext4 defaults 0 0
 ✅ Persistent Disk creation & attachment  
 ✅ Linux disk formatting & mounting  
 ✅ Real-world cloud storage configuration
-
